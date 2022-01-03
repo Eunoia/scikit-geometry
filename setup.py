@@ -128,7 +128,7 @@ ext_modules = [
         include_dirs=include_dirs,
         library_dirs=library_dirs,
         libraries=cgal_libs + ['mpfr',
-                   'gmp', 
+                   'gmp',
                    'boost_thread-mt' if boost_mt else 'boost_thread',
                    'boost_atomic-mt' if boost_mt else 'boost_atomic',
                    'boost_system',
@@ -223,7 +223,7 @@ setup(
     description='scikit-geometry, the python computational geometry library',
     long_description='',
     ext_modules=ext_modules,
-    install_requires=['pybind11>=2.3,<2.8', 'numpy'],
+    install_requires=['pybind11>=2.3,<2.8'],
     setup_requires=['pybind11>=2.3,<2.8'],
     extras_require={
         "drawing": ["matplotlib"],
